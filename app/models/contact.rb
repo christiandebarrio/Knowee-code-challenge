@@ -1,6 +1,7 @@
 class Contact < ActiveRecord::Base
   validates :first_name, :last_name, :email, :incorporation_date, presence: true
   validates :unsubscribe, inclusion: { in: [true, false] }
+  validates :email, uniqueness: true
 
   def self.import
     Spreadsheet.client_encoding = 'UTF-8'
