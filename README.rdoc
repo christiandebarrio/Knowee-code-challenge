@@ -2,7 +2,7 @@
 
 Knowee Code Challenge
 
-Basically consist in build an rails app that import an excel file in a BD.
+Basically consist in build a rails app that import an excel file in a BD.
 
 Gem used:
 'Spreadsheet'
